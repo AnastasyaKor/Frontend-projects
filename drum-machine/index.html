@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Machine</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="drum-machine">
+      <section class="panel">
+        <p class="eyebrow">Interactive UI</p>
+        <h1>Drum Machine</h1>
+        <p class="instructions">
+          Click the pads or use keys <strong>Q W E / A S D / Z X C</strong>.
+        </p>
+
+        <div id="pad-bank">
+          <button class="drum-pad" id="heater-1" type="button">
+            <span>Q</span>
+            <audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="heater-2" type="button">
+            <span>W</span>
+            <audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="heater-3" type="button">
+            <span>E</span>
+            <audio class="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="heater-4" type="button">
+            <span>A</span>
+            <audio class="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="clap" type="button">
+            <span>S</span>
+            <audio class="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="open-hh" type="button">
+            <span>D</span>
+            <audio class="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="kick-n-hat" type="button">
+            <span>Z</span>
+            <audio class="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="kick" type="button">
+            <span>X</span>
+            <audio class="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
+          </button>
+
+          <button class="drum-pad" id="closed-hh" type="button">
+            <span>C</span>
+            <audio class="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
+          </button>
+        </div>
+      </section>
+
+      <aside id="controls">
+        <p class="display-label">Now Playing</p>
+        <p id="display">Press a pad to start</p>
+      </aside>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+:root {
+  --light-grey: #f5f6f7;
+  --dark-blue: #0a0a23;
+  --fcc-blue: #1b1b32;
+  --light-yellow: #fecc4c;
+  --dark-yellow: #feac32;
+  --light-pink: #ffadad;
+  --dark-red: #850000;
+  --light-green: #acd157;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background:
+    radial-gradient(circle at top, rgba(254, 204, 76, 0.2), transparent 24%),
+    linear-gradient(180deg, #101035 0%, var(--fcc-blue) 100%);
+  color: var(--light-grey);
+}
+
+main {
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+}
+
+.app-shell {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  color: rgba(245, 246, 247, 0.78);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--light-yellow);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid rgba(245, 246, 247, 0.2);
+  border-radius: 1.5rem;
+  padding: 1.4rem;
+  background: rgba(10, 10, 35, 0.38);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid var(--dark-yellow);
+  background: linear-gradient(var(--light-yellow), var(--dark-yellow));
+}
+
+button,
+input,
+select {
+  min-height: 44px;
+  color: var(--dark-blue);
+  border-radius: 0.8rem;
+  font-size: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(10, 10, 35, 0.15);
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: 1px solid rgba(245, 246, 247, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.controls {
+  margin-top: 1rem;
+}
+
+.control-row,
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.control-row > * {
+  flex: 1 1 220px;
+}
+
+.button-row button {
+  flex: 1 1 220px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+}
+
+.output {
+  margin-top: 1rem;
+  border: 2px solid var(--light-grey);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(245, 246, 247, 0.08);
+}
+
+.hide {
+  display: none;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.surplus {
+  color: var(--light-pink);
+}
+
+.deficit {
+  color: var(--light-green);
+}
+
+@media (max-width: 640px) {
+  main {
+    padding-inline: 0.75rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

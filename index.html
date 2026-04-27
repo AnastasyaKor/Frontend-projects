@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Projects</title>
+    <style>
+      :root {
+        --bg: #fff9ef;
+        --text: #202532;
+        --muted: #5d6473;
+        --card: rgba(255, 255, 255, 0.88);
+        --border: rgba(32, 37, 50, 0.12);
+        --accent: #2358d8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(255, 123, 56, 0.14), transparent 24%),
+          radial-gradient(circle at top right, rgba(135, 196, 66, 0.14), transparent 24%),
+          linear-gradient(180deg, #fffef8 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(1100px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #ff7b38;
+        font-weight: 700;
+        font-size: 0.82rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 5vw, 4.2rem);
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .card {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        border: 1px solid var(--border);
+        background: var(--card);
+        box-shadow: 0 20px 40px rgba(54, 62, 88, 0.1);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Project Collection</p>
+      <h1>Frontend Projects</h1>
+      <p>
+        A curated repository of standalone frontend projects built with HTML,
+        CSS, JavaScript, React, and TypeScript.
+      </p>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Submit Form</h2>
+          <p>A React + TypeScript RSVP form project built with Vite.</p>
+          <a href="./submit-form/">Open folder</a>
+        </article>
+
+        <article class="card">
+          <h2>Personal Portfolio</h2>
+          <p>A portfolio landing page that introduces me and links to featured work.</p>
+          <a href="./personal-portfolio/">Open project</a>
+        </article>
+
+        <article class="card">
+          <h2>Calorie Counter</h2>
+          <p>A mini app for adding food and exercise entries against a calorie budget.</p>
+          <a href="./calorie-counter/">Open project</a>
+        </article>
+
+        <article class="card">
+          <h2>Regex Sandbox</h2>
+          <p>A regular expression playground with flags, matches, and highlighting.</p>
+          <a href="./regex-sandbox/">Open project</a>
+        </article>
+
+        <article class="card">
+          <h2>Drum Machine</h2>
+          <p>An interactive drum pad controlled with clicks and keyboard shortcuts.</p>
+          <a href="./drum-machine/">Open project</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
