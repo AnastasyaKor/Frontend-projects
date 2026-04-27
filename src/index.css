@@ -1,0 +1,30 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2d1b12;
+  background:
+    radial-gradient(circle at top, rgba(255, 214, 170, 0.7), transparent 36%),
+    linear-gradient(160deg, #fff8ef 0%, #f7e3cf 48%, #efc5ac 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}

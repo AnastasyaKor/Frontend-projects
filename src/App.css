@@ -1,0 +1,158 @@
+.page-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.hero-card {
+  width: min(100%, 760px);
+  display: grid;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 250, 244, 0.92);
+  border: 1px solid rgba(151, 104, 72, 0.18);
+  box-shadow: 0 24px 80px rgba(82, 53, 31, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.hero-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9a5b35;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 0.98;
+  color: #2d1b12;
+}
+
+.hero-text {
+  margin: 0;
+  max-width: 54ch;
+  color: #614437;
+  font-size: 1rem;
+}
+
+.form-wrap {
+  display: grid;
+  gap: 16px;
+}
+
+.section {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  color: #3f2a1f;
+}
+
+.section span,
+.checkbox-row span {
+  font-size: 0.95rem;
+}
+
+.section input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(111, 76, 52, 0.24);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #2d1b12;
+}
+
+.section input::placeholder {
+  color: #9a7b69;
+}
+
+.section input:focus,
+.checkbox-row input:focus {
+  outline: none;
+  border-color: #c16732;
+  box-shadow: 0 0 0 4px rgba(193, 103, 50, 0.14);
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #4e3528;
+  font-weight: 500;
+}
+
+.checkbox-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #c16732;
+}
+
+.submit-button {
+  justify-self: start;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c16732, #e39a53);
+  color: #fffaf4;
+  font-weight: 700;
+  box-shadow: 0 14px 30px rgba(193, 103, 50, 0.28);
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 36px rgba(193, 103, 50, 0.34);
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.confirmation-message {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 244, 230, 0.96), #fff);
+  border: 1px solid rgba(151, 104, 72, 0.18);
+}
+
+.confirmation-message h2,
+.confirmation-message p {
+  margin: 0;
+}
+
+.confirmation-message h2 {
+  color: #2d1b12;
+  font-size: 1.35rem;
+}
+
+.confirmation-message p {
+  color: #5c4031;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 16px;
+  }
+
+  .hero-card {
+    padding: 24px 18px;
+    border-radius: 24px;
+  }
+
+  .submit-button {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
