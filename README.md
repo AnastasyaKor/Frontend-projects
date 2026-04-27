@@ -1,16 +1,56 @@
-# Frontend Projects
+# Frontend-projects
 
-This repository contains a growing collection of frontend practice projects. Each project lives in its own folder so it can be developed, reviewed, and shared independently.
+Коллекция моих frontend-проектов, собранных в одном репозитории.  
+Здесь находятся как более простые учебные работы, так и отдельные мини-приложения с интерфейсом, логикой и адаптивной вёрсткой.
 
-## Projects
+## О репозитории
 
-- `submit-form` - a React + TypeScript RSVP form project built with Vite.
-- `personal-portfolio` - a responsive portfolio landing page with links to featured work.
-- `calorie-counter` - a JavaScript mini app for tracking meals, exercise, and remaining calories.
-- `regex-sandbox` - a regular expression playground with match highlighting.
-- `drum-machine` - an interactive drum pad controlled by mouse clicks and keyboard input.
+Каждый проект лежит в своей отдельной папке и может рассматриваться как самостоятельная работа.  
+Репозиторий постепенно пополняется новыми проектами по мере практики и развития навыков.
 
-## Structure
+## Проекты
+
+### submit-form
+
+React + TypeScript проект, собранный на Vite.  
+Форма RSVP с современным стеком и отдельной структурой приложения.
+
+[Открыть папку проекта](./submit-form/)
+
+### personal-portfolio
+
+Адаптивная landing page-портфолио со вступительным блоком, секцией проектов и контактами.
+
+[Открыть папку проекта](./personal-portfolio/)
+
+### calorie-counter
+
+Мини-приложение на JavaScript для подсчёта калорий, добавления приёмов пищи и упражнений.
+
+[Открыть папку проекта](./calorie-counter/)
+
+### regex-sandbox
+
+Небольшой инструмент для тестирования регулярных выражений с подсветкой совпадений и выбором флагов.
+
+[Открыть папку проекта](./regex-sandbox/)
+
+### drum-machine
+
+Интерактивный drum pad, который работает по клику и с клавиатуры.
+
+[Открыть папку проекта](./drum-machine/)
+
+## Стек
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- TypeScript
+- Vite
+
+## Структура
 
 ```text
 Frontend-projects/
@@ -19,10 +59,16 @@ Frontend-projects/
   calorie-counter/
   regex-sandbox/
   drum-machine/
+  README.md
+  index.html
 ```
 
-## Notes
+## Навигация
 
-- Projects in this repository use different stacks depending on the task.
-- Some projects are simple static apps, while others use modern tooling such as Vite and React.
-- Each folder can be treated as a standalone project.
+В корне репозитория есть [index.html](./index.html), который можно использовать как простую стартовую страницу со ссылками на выбранные проекты.
+
+## Планы по доработке
+
+- добавить новые проекты
+- улучшить описания и превью
+- при необходимости оформить GitHub Pages для удобного просмотра
