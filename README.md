@@ -10,6 +10,13 @@
 
 ## Проекты
 
+### cars-react
+
+React + TypeScript проект, собранный на Vite.  
+Лендинг с каталогом автомобилей, фильтрацией по маркам, адаптивной вёрсткой и формой бронирования.
+
+[Открыть папку проекта](./cars-react/)
+
 ### submit-form
 
 React + TypeScript проект, собранный на Vite.  
@@ -54,6 +61,7 @@ React + TypeScript проект, собранный на Vite.
 
 ```text
 Frontend-projects/
+  cars-react/
   submit-form/
   personal-portfolio/
   calorie-counter/
